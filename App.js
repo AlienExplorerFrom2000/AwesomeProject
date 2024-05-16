@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, Dimensions, ScrollView, Alert, Button,} from 'react-native'
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import DetailedPage from './src/DetailedPage'
 
 const Stack = createNativeStackNavigator();
 
@@ -45,7 +46,7 @@ const HomePage = ({navigation}) => {
   );
 };
 
-const DetailedPage = () => {
+/*const DetailedPage = () => {
   return (
     <ScrollView>
     <View style={styles.root}>
@@ -56,7 +57,7 @@ const DetailedPage = () => {
     </View>
     </ScrollView>
   );
-};
+};*/
 
 const styles = StyleSheet.create({
   root: {
