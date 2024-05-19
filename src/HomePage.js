@@ -9,6 +9,10 @@ const HomePage = ({navigation}) => {
             <View style={styles.space}/>
             <Image style={styles.image} source={require('../assets/images/Knight.jpg')} />
             <View style={styles.space}/>
+            <Text style={styles.text}>This is an app to show case all imperial 
+            knights from Wh40K and there customisation options. You can save the
+            ones your interested in to the Favourites page</Text>
+            <View style={styles.space}/>
             <Button 
               title='Show me another' 
               onPress={() =>
@@ -37,6 +41,10 @@ const HomePage = ({navigation}) => {
     image: {
       width: Dimensions.get('window').width-10,
       height: 500,  
+    },
+    text: {
+      fontSize: 14,
+      paddingHorizontal: 2
     },
   });
 

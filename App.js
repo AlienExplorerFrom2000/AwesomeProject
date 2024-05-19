@@ -18,7 +18,7 @@ const YourApp = () => {
         <Stack.Screen
           name="Detailed"
           component={DetailedPage}
-          options={{title: 'Something Else'}}
+          options={{title: 'KC'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
