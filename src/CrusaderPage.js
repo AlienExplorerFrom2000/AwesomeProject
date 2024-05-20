@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, Dimensions, ScrollView, Alert, Button, TouchableOpacity} from 'react-native'
 
-const DetailedPage = () => {
+const CrusaderPage = () => {
     return (
       <ScrollView>
       <View style={styles.root}>
@@ -96,4 +96,4 @@ const DetailedPage = () => {
     },
   });
 
-export default DetailedPage
+export default CrusaderPage
