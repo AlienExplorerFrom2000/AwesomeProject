@@ -27,9 +27,8 @@ const PaladinPage = () => {
         <View style={styles.container}>
           <Text style={styles.left}>Knight Paladin(x1)</Text>
           <View style={styles.rightContainer}>
-            <Text style={styles.right}>$100</Text>
             <TouchableOpacity style={styles.button} onPress={() => Alert.alert('Added to Cart')}>
-              <Text style={styles.buttonText}>Add to Cart</Text>
+              <Text style={styles.buttonText}>Add to Favourites</Text>
             </TouchableOpacity>
           </View>
         </View>

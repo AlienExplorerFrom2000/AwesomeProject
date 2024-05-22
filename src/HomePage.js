@@ -1,9 +1,12 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Dimensions, ScrollView, Alert, Button} from 'react-native'
+import { View, Text, Image, StyleSheet, Dimensions, ScrollView, Alert, Button, Pressable, TouchableOpacity} from 'react-native'
 import { Divider } from '@rneui/themed';
+import { FAB, TextInput } from 'react-native-paper';
+import AntDesignIcons from 'react-native-vector-icons/AntDesign';
 
 const HomePage = ({navigation}) => {
     return (
+      <View>
         <ScrollView>
           <View style={styles.root}>
             <Text style={styles.title}>Welcome</Text>
@@ -48,6 +51,14 @@ const HomePage = ({navigation}) => {
             <View style={styles.space}/>         
           </View>
         </ScrollView>
+        <View style={styles.button_pos}>
+          <Text style={styles.label}>Favourites</Text>
+          <View style={styles.spaceVert}></View>
+          <TouchableOpacity style={styles.plusButton}>
+            <AntDesignIcons name="heart" size={35} color={'black'}/>
+          </TouchableOpacity>
+        </View>
+      </View>
     );
   };
 
@@ -90,6 +101,29 @@ const HomePage = ({navigation}) => {
       paddingHorizontal: 10,
       marginVertical: 10,
     },
+    button_pos: {
+      flexDirection: 'row',
+      poition: 'absolute',
+      bottom: 70,
+      left: Dimensions.get('window').width-165,
+      alignItems: 'center',
+    },
+    plusButton: {
+      width: 60,
+      height: 60,
+      backgroundColor: 'red',
+      borderRadius: 30,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    spaceVert: {
+      width: 6,
+    },
+    label: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      fontStyle: 'italic',
+    }
   });
 
 export default HomePage
