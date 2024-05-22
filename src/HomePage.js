@@ -35,6 +35,16 @@ const HomePage = ({navigation}) => {
               />
             </View>
             <Divider style={styles.divider} />
+            <View style={styles.container}>
+              <Image style={styles.thumbnail} source={require('../assets/images/dk_t.jpg')} />
+              <Button 
+                title='Knight Castellan' 
+                onPress={() =>
+                  navigation.navigate('Castellan')
+                }
+              />
+            </View>
+            <Divider style={styles.divider} />
             <View style={styles.space}/>         
           </View>
         </ScrollView>
